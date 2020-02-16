@@ -209,7 +209,7 @@ def getIssueUser(id):
         issue_data['book_issuedate'] = f"{data.borrdate}"[:10]
         issue_data['book_returndate'] = f"{ret_date}"[:12]
         issue_data['book_returnstatus'] = data.retstatus
-        rem_days = f"{ret_date - data.borrdate}"
+        rem_days = f"{ret_date - date.today()}"
         borr_days = f"{date.today() - data.borrdate}"
         issue_data['book_issuesince'] = borr_days[:2]
         issue_data['book_returndaysremain'] = rem_days[:2]
