@@ -34,7 +34,7 @@ $ source .\venv\bin\activate
 
 
 
-**Install Flask and other dependencies **
+**Install Flask and other dependencies**
 
 ```bash
 pip install flask flask-sqlalchemy flask-cors
@@ -69,7 +69,7 @@ It is recommended that you use REST API testing tools like [Postman](https://www
 
 ### Endpoints
 
-|  Method  | Endpoint                        | Body                                                         |
+|  Method  | Endpoint                        | Body (Content-type:JSON)                                     |
 | :------: | :------------------------------ | :----------------------------------------------------------- |
 |  [GET]   | `/api/books`                    |                                                              |
 |  [GET]   | `/api/book/<bookid>`            |                                                              |
